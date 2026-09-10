@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "医学影像论文智能通读助手",
+  "version": "0.2.1",
+  "description": "在 Zotero 中生成保留全文、图表与逻辑线路的可追溯通读页面",
+  "author": "QUANTAO SHI",
+  "applications": {
+    "zotero": {
+      "id": "paper-reading-assistant@local",
+      "update_url": "https://paper-reading-assistant.invalid/updates.json",
+      "strict_min_version": "10.0",
+      "strict_max_version": "10.0.*"
+    }
+  }
+}

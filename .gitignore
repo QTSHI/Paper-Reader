@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+*.xpi
+.env
+.env.*
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.DS_Store
+
+# Generated reading pages may contain copyrighted paper text and figures.
+STADNet_外刊精读.html

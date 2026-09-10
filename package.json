@@ -1,0 +1,28 @@
+{
+  "name": "zotero-paper-reading-assistant",
+  "version": "0.2.1",
+  "private": true,
+  "description": "A personal Zotero 10 plugin for full-paper assisted reading of medical-imaging papers.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run clean && npm run typecheck && npm run test && node scripts/build.mjs",
+    "pack": "npm run build"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "jsonrepair": "^3.15.0",
+    "pdfjs-dist": "5.4.149"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "esbuild": "^0.25.12",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

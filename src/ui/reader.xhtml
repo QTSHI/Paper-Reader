@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>医学影像论文智能通读</title>
+  <link rel="stylesheet" href="chrome://paper-reader/content/reader.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">PR</span><span>医学影像论文智能通读</span></div>
+    <div class="toolbar">
+      <button id="toggle-translation" type="button">隐藏译文</button>
+      <button id="font-down" type="button" aria-label="缩小字号">A−</button>
+      <button id="font-up" type="button" aria-label="增大字号">A+</button>
+    </div>
+  </header>
+  <div class="progress-track"><div id="progress-bar"></div></div>
+  <main class="layout">
+    <aside id="rail" class="rail" aria-label="章节导航"></aside>
+    <article id="article" class="article"><p class="loading">正在载入通读内容…</p></article>
+    <aside id="vocab" class="vocab" aria-label="术语与阅读信息"></aside>
+  </main>
+  <script src="chrome://paper-reader/content/reader.js"></script>
+</body>
+</html>
